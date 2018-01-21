@@ -20,13 +20,18 @@ public class DontForgetTheLyrics {
 	
 	public static void main(String[] args) {
 		// 4. Make a pop-up to explain the game.
-
+JOptionPane.showMessageDialog(null, "We are going to play an annoying song and you will need to know the words");
 		// 5. Use the playSound method to play your song.
-
+playSound("SmashCut.wav");
 		// 6. Make a pop-up for the player to type their answer.
-
+String Aaa = JOptionPane.showInputDialog("What is the next five lyrics including 'Hey'");
 		// 7. If they answered correctly, tell them that they were right.
+System.out.println("\'"+Aaa+"\'");
+if (Aaa.equalsIgnoreCase("Hey now you're a rockstar") ) { JOptionPane.showMessageDialog(null, "You is right");
 
+}else { JOptionPane.showMessageDialog(null, "Nope, it's Hey now you're a rockstar");
+	
+}
 		// 8. Otherwise, tell them they are wrong, and give them the answer.
 
 		// 9. Record another sound and repeat steps 5-8.
